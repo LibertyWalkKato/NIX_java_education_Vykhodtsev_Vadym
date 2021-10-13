@@ -30,10 +30,11 @@ public class ChatBot {
                 +"4. To interrupt the execution of a program.\n");
         do {
             answer = in.nextInt();
-            if (answer == 2) break;
+            if (answer == 2){
+                System.out.printf("You right!\nGoodbye, have a nice day!");
+                break;}
             else System.out.printf("Try again.\n");
         }
         while(answer != 2);
-        System.out.printf("You right!\nGoodbye, have a nice day!");
     }
 }
